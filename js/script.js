@@ -1,25 +1,46 @@
+const container = document.getElementById('container')
 
-console.log('inizio');
+for (let num = 1; num <= 100; num++) {
+    const table = document.createElement('div')
+    table.classList.add('styletable')
+    container.append(table)
+    let result 
 
-let i;
+    if (num % 3 === 0 && num % 5 === 0) 
+    {
+       result='fizzbuzz'
+       console.log(result)
+       table.innerHTML = result
+       table.classList.add('bg-red')
+    }
 
-for (i = 0; i < 100; i++) {
+    else if (num % 3 === 0) 
+    {
+        result = 'fizz'
+        console.log(result);
+        table.innerHTML = result
+        table.classList.add('bg-green')
 
-    console.log(i);
+    }
+    
+
+    else if (num % 5 === 0) {
+        result = 'buzz'
+        console.log(result);
+        table.innerHTML = result
+        table.classList.add('bg-orange')
+    }
+
+    else {
+        result = num
+        console.log(result);
+        table.innerHTML = result
+        table.classList.add('bg-cornflowerblue')
+    }
 
 }
 
-console.log('fine', i);
 
-if (i.value / 3) 
-{
-    i = fizz
-    console.log(i)
-}
 
-else if (i.value / 5)
-{
-    i = buzz
-    console.log(i)
-}
+
 

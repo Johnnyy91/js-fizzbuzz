@@ -9,7 +9,7 @@ for (let num = 1; num <= 100; num++) {
     if (num % 3 === 0 && num % 5 === 0) 
     {
        result='fizzbuzz'
-       console.log(result)
+       //console.log(result)
        table.innerHTML = result
        table.classList.add('bg-red')
     }
@@ -17,7 +17,7 @@ for (let num = 1; num <= 100; num++) {
     else if (num % 3 === 0) 
     {
         result = 'fizz'
-        console.log(result);
+        //console.log(result);
         table.innerHTML = result
         table.classList.add('bg-green')
 
@@ -26,19 +26,22 @@ for (let num = 1; num <= 100; num++) {
 
     else if (num % 5 === 0) {
         result = 'buzz'
-        console.log(result);
+        //console.log(result);
         table.innerHTML = result
         table.classList.add('bg-orange')
     }
 
     else {
         result = num
-        console.log(result);
+        //console.log(result);
         table.innerHTML = result
         table.classList.add('bg-cornflowerblue')
     }
 
+    console.log(result)
+
 }
+
 
 
 
